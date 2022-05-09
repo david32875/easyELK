@@ -23,7 +23,7 @@ echo " Install Elasticsearch... "
 
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 sudo apt-get -yq install apt-transport-https > /dev/null
-echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
+echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list > /dev/null
 sudo DEBIAN_FRONTEND=noninteractive apt-get -yq update > /dev/null && sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install elasticsearch > /dev/null
 
 echo " Install Elasticsearch - Complete "
